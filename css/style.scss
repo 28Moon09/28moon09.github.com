@@ -1,0 +1,941 @@
+@import url("https://fonts.googleapis.com/css?family=Signika+Negative:300,400&display=swap");
+
+html {
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 3px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: red;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: rgb(10, 10, 10);
+}
+
+* {
+    max-width: 1900px;
+    
+}
+
+body {
+    font-family: "Signika Negative";
+    width: 100%;
+    margin: 0px;
+    font-weight: bold;
+
+    min-height: 100vh;
+    background: linear-gradient(#1b1b1b, #0f0f0f);
+    background-size: cover;
+}
+
+.Bar {
+    position: fixed;
+    display: flex;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.411);
+    background-color: #171717;
+    border-radius: 0px 0px 21px 21px;
+
+    max-width: 1920px;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-list {
+
+    display: flex;
+    align-self: flex-end;
+    flex-direction: row;
+    list-style: none;
+
+    cursor: pointer;
+}
+
+.nav-list li {
+    list-style: none;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-right: 15px;
+    width: 94%;
+
+    color: #fff;
+}
+
+a {
+    font-size: 15px;
+    color: #fff;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.Icon {
+    margin-left: 35%;
+
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+.Icon img {
+    width: 70px;
+    height: 50px;
+}
+
+.nav-list2 {
+
+    margin-left: 520px;
+
+    display: flex;
+    align-self: flex-end;
+    flex-direction: row;
+    list-style: none;
+
+    cursor: pointer;
+}
+
+.nav-list2 li {
+    list-style: none;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-right: 13px;
+    width: 94%;
+
+    color: #fff;
+}
+
+section {
+    z-index: 3;
+    margin-top: 0px;
+    min-height: 70vh;
+    min-width: 100vh;
+    background-size: cover;
+
+    display: flex;
+
+    background-image: url("https://media.discordapp.net/attachments/559406095416819736/1058508224745193573/bg.png?width=1213&height=682");
+    box-shadow: 13px 3px 6px rgba(0, 0, 0, 0.226);
+}
+
+section h1 {
+    height: 80px;
+    font-size: 92px;
+    margin: 20px;
+    margin-left: 50px;
+
+    color: #e0e0e0;
+}
+
+section h4 {
+    width: 450px;
+    height: 80px;
+    font-size: 15px;
+    margin-left: 57px;
+
+    color: #e0e0e0;
+}
+
+.text {
+    margin-top: 170px;
+}
+
+section img {
+    margin-left: 200px;
+}
+
+.Drag {
+    position: absolute;
+
+    top: -1px;
+    left: 620px;
+
+    height: 625px;
+}
+
+.Chat {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+
+    flex-direction: column;
+    margin-top: 50px;
+
+    color: #ffffff;
+}
+
+.Chat h1 {
+    text-shadow: 0.1em 0.1em 8px rgba(0, 0, 0, 0.041);
+    text-transform: uppercase;
+
+    display: flex;
+    height: 1px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.Chat h4 {
+    text-shadow: 0.1em 0.1em 8px rgba(0, 0, 0, 0.041);
+    height: 1px;
+
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+.Chat h5 {
+    text-shadow: 0.1em 0.1em 8px rgba(0, 0, 0, 0.041);
+    height: 1px;
+    margin: 0;
+    font-size: 15px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+.Chat h3 {
+    visibility: hidden;
+}
+
+.Chat a {
+    text-shadow: 0.1em 0.1em 8px rgba(0, 0, 0, 0.041);
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 2px;
+
+    font-size: 15px;
+    height: 10px;
+    margin: 0;
+    margin-left: 3px;
+    align-content: center;
+    text-align: center;
+    display: flex;
+}
+
+a:link {
+    color: rgb(255, 255, 255);
+}
+
+footer {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    margin-top: 5px;
+}
+
+footer h5 {
+    text-shadow: 0.1em 0.1em 8px rgba(0, 0, 0, 0.041);
+    display: flex;
+    margin-left: 20px;
+}
+
+.Text1 {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+
+    top: 700px;
+    left: 560px;
+}
+
+.Text1 h1 {
+    height: 20px;
+}
+
+.Text1 h3 {
+    color: #fff;
+    width: 50%;
+}
+
+
+.Ken img {
+    position: absolute;
+
+
+    border-radius: 15%;
+    top: 350px;
+    left: 1250px;
+}
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 30px;
+
+    border-radius: 15%;
+
+    background-color: transparent;
+    width: 500px;
+    height: 500px;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    border-radius: 15%;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    border-radius: 15%;
+    box-shadow: 13px 3px 6px rgba(0, 0, 0, 0.678);
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    border-radius: 15%;
+    box-shadow: 5px 3px 6px rgba(0, 0, 0, 0.432);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    border-radius: 15%;
+    background-color: #bbb;
+    color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    border-radius: 15%;
+    box-shadow: 5px 3px 6px rgba(0, 0, 0, 0.432);
+    color: rgb(0, 0, 0);
+    transform: rotateY(180deg);
+}
+
+.flip-card-back h1 {
+    top: 35%;
+    position: absolute;
+
+    color: #fff;
+}
+
+.flip-card-back h5 {
+    top: 43%;
+    position: absolute;
+
+    color: #fff;
+}
+
+.flip-card-back h4 {
+    top: 85%;
+    position: absolute;
+
+    color: #fff;
+}
+
+.Redes {
+    position: absolute;
+    height: 20px;
+
+    top: 55%;
+}
+
+.img1 {
+    position: absolute;
+    top: 50px;
+}
+
+.flip-card-front img {
+    border-radius: 15%;
+}
+
+.flip-card-back img {
+    border-radius: 15%;
+}
+
+#Skills {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+
+    font-size: 20px;
+    
+}
+
+.skill-bar {
+    gap: 10px;
+    margin-top: 70px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.progress {
+    background: rgba(255, 255, 255, 0.1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 20px;
+    width: 500px;
+}
+
+.progress-value {
+    animation: load 1.5s ease-out 0s 1 normal forwards;
+    box-shadow: 0 0px 15px 1px rgba(255, 0, 0, 0.466);
+    border-radius: 100px;
+    background: rgb(255, 0, 0);
+    height: 10px;
+    width: 0;
+}
+
+@keyframes load {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+.skill-bar2 {
+    gap: 10px;
+    margin-top: 70px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.progress2 {
+    background: rgba(255, 255, 255, 0.1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 20px;
+    width: 500px;
+}
+
+.progress-value2 {
+    animation: load2 1.5s ease-out 0s 1 normal forwards; // Para mudar a porcentagem precisa mudar o nome da load :)
+    box-shadow: 0 0px 15px 1px rgba(255, 0, 0, 0.466);
+    border-radius: 100px;
+    background: rgb(255, 0, 0);
+    height: 10px;
+    width: 0;
+}
+
+@keyframes load2 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 10%;
+    }
+}
+
+.text h1 {
+    text-shadow: #0f0f0fa9 3px 7px 10px;
+}
+
+.text h4 {
+    text-shadow: #0f0f0fa9 3px 3px 10px;
+}
+
+.BottomName {
+    margin-left: 1500px;
+}
+
+.Projetos {
+    margin-top: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+}
+
+.div1 {
+
+    background-image: url("https://cdn.discordapp.com/attachments/559406095416819736/1058878674692218960/1.png");
+
+    width: 350px;
+    height: 350px;
+    border-radius: 10%;
+    box-shadow: 5px 3px 6px rgba(0, 0, 0, 0.432);
+    animation: fadeIn1 1s;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.div2 {
+
+    background-image: url("https://cdn.discordapp.com/attachments/559406095416819736/1058878675002605628/2.png");
+
+    width: 350px;
+    height: 350px;
+    border-radius: 10%;
+    box-shadow: 5px 3px 6px rgba(0, 0, 0, 0.432);
+    animation: fadeIn1 1s;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.div3 {
+
+    background-size: cover;
+    background-image: url("https://cdn.discordapp.com/attachments/559406095416819736/1058878673928855573/3.png");
+
+    width: 350px;
+    height: 350px;
+    border-radius: 10%;
+    box-shadow: 5px 3px 6px rgba(0, 0, 0, 0.432);
+    animation: fadeIn1 1s;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.div4 {
+    background-image: url("https://cdn.discordapp.com/attachments/559406095416819736/1058878674260213861/4.png");
+
+    width: 350px;
+    height: 350px;
+    border-radius: 10%;
+    box-shadow: 5px 3px 6px rgba(0, 0, 0, 0.432);
+    animation: fadeIn1 1s;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.div1:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.div1:hover::after {
+    opacity: 1;
+}
+
+.div2:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.div2:hover::after {
+    opacity: 1;
+}
+
+.div3:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.div3:hover::after {
+    opacity: 1;
+}
+
+.div4:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.div4:hover::after {
+    opacity: 1;
+}
+
+#Projects {
+    height: 50%;
+}
+
+.Projetos img {
+    border-radius: 10%;
+}
+
+.Text3 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+
+    color: #fff;
+    text-shadow: 0.1em 0.1em 8px rgba(0, 0, 0, 0.041);
+    animation: fadeIn 3s;
+}
+
+
+.Text3 h1 {
+    height: 3px;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeIn1 {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@media only screen and (max-device-width: 915px) {
+    .Bar {
+        height: 150px;
+        position: fixed;
+        margin: 0px;
+        background-color: rgb(0, 0, 0);
+        padding: 0;
+    }
+
+    .Icon img{
+        width: 170px;
+        height: 150px;
+    }
+
+    .Icon {
+        display: flex;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .nav-list {
+        visibility: hidden;
+        margin: 0;
+        height: 0;
+        width: 0;
+    }
+
+    .nav-list2 {
+        visibility: hidden;
+        margin: 0;
+        height: 0;
+        width: 0;
+    }
+
+    section {
+        min-height: 30vh;
+        min-width: 76vh;
+        max-width: 76vh;
+    }
+
+    section img {
+        position: absolute;
+        top: 90px;
+        left: 320px;
+    }
+
+    .Drag {
+        position: absolute;
+        left: 450px;
+        top: 40px;
+    }
+
+    .text {
+        margin-top: 200px;
+    }
+
+    .text h4 {
+        font-size: x-large;
+        height: 50%;
+        width: 35%;
+    }
+
+    .Text1 {
+        display: flex;
+        flex-direction: column;
+    
+        position: absolute;
+    
+        top: 750px;
+        left: 30px;
+    }
+    .Text1 h1 {
+        width: 100%;
+    }
+
+    .Text1 h3 {
+        width: 100%;
+        height: 50%;
+        font-size: xx-large;
+    }
+
+    .Ken img {
+        visibility: hidden;
+    }
+
+    #Skills {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-content: center;
+        
+        margin-top: 130px;
+    }
+
+    footer {
+        min-width: 76vh;
+        max-width: 76vh;
+        height: auto;
+        width: auto;
+        
+        margin-top: 200px;
+    }
+
+    footer h5 {
+        font-size: x-large;
+        display: flex;
+        flex-direction: row;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .BottomName {
+        margin-top: 2.5%;
+        margin-left: 500px;
+    }
+
+    .Chat {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+
+        font-size: xx-large;
+    
+        flex-direction: column;
+        margin-top: 80px;
+        margin-left: 0px;
+    
+        color: #ffffff;
+    }
+    
+    .Chat h1 {
+        text-shadow: 0.1em 0.1em 8px rgba(0, 0, 0, 0.041);
+        text-transform: uppercase;
+    
+        margin-left: 0px;
+        display: flex;
+        height: 3px;
+        margin-bottom: 3;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    
+    .Chat h4 {
+        text-shadow: 0.1em 0.1em 8px rgba(0, 0, 0, 0.041);
+    
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        visibility: hidden;
+    }
+
+    .Chat h3 {
+        margin-left: 234px;
+        margin-top: -10px;
+
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        visibility: visible;
+
+        height: 10px;
+        width: 50%;
+    }
+
+    .Chat h5 {
+        visibility: hidden;
+    }
+    
+
+    body {
+        font-family: "Signika Negative";
+        background: linear-gradient(#1b1b1b, #0f0f0f);
+        background-size: cover;
+    }
+
+    .Projetos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 3px;
+    }
+
+    .skill-bar {
+        font-size: 30px;
+        gap: 10px;
+    
+        display: flex;
+        justify-content: center;
+    }
+    
+    .progress {
+        background: rgba(255, 255, 255, 0.1);
+        justify-content: flex-start;
+        border-radius: 100px;
+        align-items: center;
+        position: relative;
+        padding: 0 5px;
+        display: flex;
+        height: 40px;
+        width: 500px;
+    }
+    
+    .progress-value {
+        animation: load 1.5s ease-out 0s 1 normal forwards;
+        box-shadow: 0 0px 15px 1px rgba(255, 0, 0, 0.466);
+        border-radius: 100px;
+        background: rgb(255, 0, 0);
+        height: 30px;
+        width: 0;
+    }
+    
+    @keyframes load {
+        0% {
+            width: 0;
+        }
+    
+        100% {
+            width: 50%;
+        }
+    }
+    
+    .skill-bar2 {
+        font-size: 30px;
+        gap: 10px;
+        margin-top: 70px;
+    
+        display: flex;
+        justify-content: center;
+    }
+    
+    .progress2 {
+        background: rgba(255, 255, 255, 0.1);
+        justify-content: flex-start;
+        border-radius: 100px;
+        align-items: center;
+        position: relative;
+        padding: 0 5px;
+        display: flex;
+        height: 40px;
+        width: 500px;
+    }
+    
+    .progress-value2 {
+        animation: load2 1.5s ease-out 0s 1 normal forwards; // Para mudar a porcentagem precisa mudar o nome da load :)
+        box-shadow: 0 0px 15px 1px rgba(255, 0, 0, 0.466);
+        border-radius: 100px;
+        background: rgb(255, 0, 0);
+        height: 30px;
+        width: 0;
+    }
+    
+    @keyframes load2 {
+        0% {
+            width: 0;
+        }
+    
+        100% {
+            width: 10%;
+        }
+    }
+
+    .flip-card {
+        margin-top: 1000px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-left: 240px;
+
+    }
+
+    .Text1 h1 {
+        font-size: 60px;
+    }
+    
+
+    .flip-card-back h1 {
+        top: 30%;
+        font-size: 70px;
+        position: absolute;
+    
+        color: #fff;
+    }
+    
+    .flip-card-back h5 {
+        top: 48%;
+        font-size: 30px;
+        position: absolute;
+    
+        color: #fff;
+    }
+    
+    .flip-card-back h4 {
+        top: 85%;
+        font-size: 20px;
+        position: absolute;
+    
+        color: #fff;
+    }
+
+    .Redes {
+        visibility: hidden;
+    }
+
+    .div1{
+        width: 230px;
+        height: 230px;
+    }
+
+    .div2{
+        width: 230px;
+        height: 230px;
+    }
+
+    .div3{
+        width: 230px;
+        height: 230px;
+    }
+
+    .div4{
+        width: 230px;
+        height: 230px;
+    }
+
+    html, body {
+        overflow-x: hidden;
+      }
+      body {
+        position: relative
+      }
+
+      .Text3 h5 {
+        visibility: hidden;
+      }
+}
