@@ -98,7 +98,7 @@ section {
   z-index: 3;
   margin-top: 0px;
   min-height: 70vh;
-  min-width: 100vh;
+  min-width: 101%;
   background-size: cover;
   display: flex;
   background-image: url("https://media.discordapp.net/attachments/559406095416819736/1058508224745193573/bg.png?width=1213&height=682");
@@ -142,7 +142,7 @@ section img {
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  margin-top: 50px;
+  margin-top: 30px;
   color: #ffffff;
 }
 
@@ -174,6 +174,9 @@ section img {
   justify-content: center;
   text-align: center;
   display: flex;
+  position: absolute;
+  left: 820px;
+  top: 2465px;
 }
 
 .Chat h3 {
@@ -200,11 +203,13 @@ a:link {
 }
 
 footer {
+  text-align: center;
   background-color: #ffffff;
-  width: 100%;
-  height: 100%;
+  width: 2300px;
+  height: 7%;
+  left: 10px;
   display: flex;
-  margin-top: 5px;
+  position: absolute;
 }
 
 footer h5 {
@@ -217,7 +222,7 @@ footer h5 {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 700px;
+  top: 850px;
   left: 560px;
 }
 
@@ -233,8 +238,8 @@ footer h5 {
 .Ken img {
   position: absolute;
   border-radius: 15%;
-  top: 350px;
-  left: 1250px;
+  top: 440px;
+  left: 1300px;
 }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
@@ -448,7 +453,7 @@ footer h5 {
 }
 
 .Projetos {
-  margin-top: 150px;
+  margin-top: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -623,13 +628,13 @@ footer h5 {
   }
   section img {
     position: absolute;
-    top: 90px;
+    top: 60px;
     left: 320px;
   }
   .Drag {
     position: absolute;
-    left: 450px;
-    top: 40px;
+    left: 400px;
+    top: 20px;
   }
   .text {
     margin-top: 200px;
@@ -643,14 +648,15 @@ footer h5 {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 750px;
-    left: 30px;
+    top: 650px;
+    text-align: center;
+    left: 70px;
   }
   .Text1 h1 {
-    width: 100%;
+    width: 90%;
   }
   .Text1 h3 {
-    width: 100%;
+    width: 90%;
     height: 50%;
     font-size: xx-large;
   }
@@ -662,7 +668,7 @@ footer h5 {
     flex-direction: column;
     align-self: center;
     justify-content: center;
-    margin-top: 130px;
+    margin-top: 30px;
   }
   footer {
     min-width: 76vh;
@@ -675,6 +681,8 @@ footer h5 {
     font-size: x-large;
     display: flex;
     flex-direction: row;
+    margin-left: 250px;
+    margin-top: 30px;
     justify-content: center;
     align-items: center;
   }
@@ -828,6 +836,7 @@ footer h5 {
     align-items: center;
     justify-content: center;
     margin-left: 240px;
+    margin-bottom: 0;
   }
   .Text1 h1 {
     font-size: 60px;
@@ -877,5 +886,144 @@ footer h5 {
   }
   .Text3 h5 {
     visibility: hidden;
+  }
+}
+@media only screen and (max-device-width: 2560px) {
+  .Bar {
+    position: fixed;
+    margin: 0px;
+    display: flex;
+    width: 1500vh;
+    padding: 0;
+    min-width: 2515px;
+  }
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  .nav-list {
+    width: 100%;
+  }
+  .Icon {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+  }
+  .text h4 {
+    height: 50px;
+    width: 500px;
+  }
+  .nav-list2 {
+    margin-left: 930px;
+  }
+  section {
+    min-width: 2515px;
+  }
+  section h1 {
+    font-size: 130px;
+    margin-left: 150px;
+  }
+  section h4 {
+    font-size: 25px;
+    width: 30%;
+    margin-top: 63px;
+    margin-left: 157px;
+  }
+  section img {
+    left: 600px;
+    width: 400px;
+    top: 50px;
+    position: absolute;
+  }
+  .Drag {
+    position: absolute;
+    left: 800px;
+  }
+  .Ken {
+    position: absolute;
+    left: 600px;
+    top: 3px;
+  }
+  .Text1 {
+    display: flex;
+    margin-left: 50px;
+    position: absolute;
+    top: 700px;
+    margin-top: 0px;
+    font-size: x-large;
+  }
+  .Text1 h3 {
+    width: 65%;
+  }
+  .flip-card {
+    margin-left: 50px;
+  }
+  #Skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 250px;
+    font-size: x-large;
+  }
+  .skill-bar {
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .skill-bar2 {
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .Projetos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 450px;
+    gap: 20px;
+  }
+  .div1 {
+    width: 450px;
+    height: 450px;
+  }
+  .div2 {
+    width: 450px;
+    height: 450px;
+  }
+  .div3 {
+    width: 450px;
+    height: 450px;
+  }
+  .div4 {
+    width: 450px;
+    height: 450px;
+  }
+  footer {
+    width: 1200vh;
+    min-width: 2505px;
+  }
+  footer h5 {
+    font-size: large;
+    margin-left: 30px;
+  }
+  .BottomName {
+    margin-left: 1880px;
+  }
+  .Chat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 550px;
+    font-size: x-large;
+  }
+  .Chat h5 {
+    font-size: large;
+    position: absolute;
+    top: 2470px;
+    left: 1070px;
+  }
+  .Chat a {
+    font-size: large;
   }
 }/*# sourceMappingURL=style.css.map */
